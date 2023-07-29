@@ -1,0 +1,126 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 130vh;
+    background: url('images/restaurant.jpg');
+    background-size: cover;
+}
+
+ul {
+    list-style: none;
+    float: right;
+    margin-top: 30px;
+    min-height: 400px;
+    margin-right: 40px;
+    font-size: 16px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+   
+ border: 1px solid transparent;
+    transition: 0.5s ease;
+}
+
+ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+ul li.active a {
+    background-color: white;
+    color: black;
+}
+
+h2 {
+    float: left;
+    text-align: center;
+    padding-top: 80px;
+    color: beige;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top: 0px;
+    margin-left: -180px;
+}
+
+.logo img {
+    float: left;
+    height: auto;
+    width: 160px;
+}
+
+.main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.title h1 {
+    color: white;
+    font-size: 70px;
+    background: linear-gradient(to top, rgb(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%);
+}
+
+.button {
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    color: white;
+    border: 1px solid white;
+    padding: 5px 20px;
+    font-weight: bold;
+    background: linear-gradient(to top, rgb(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%);
+    text-decoration: none;
+
+}
+
+.btn:hover {
+    background-color: #eaecec;
+    color: black
+}
+.sub-menu{
+    display: none ;
+    top:6%;
+    position: relative;
+}
+.sub-menu ul{
+    position: absolute;
+}
+.main ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color: rgb(100, 100, 129);
+    
+}
+.main ul li:hover .sub-menu ul {
+    display: block;
+    margin-top: 16px;
+}
+.main ul li:hover .sub-menu ul li {
+    width: 75px;
+    padding: 5px;
+    border-bottom: 1px white;
+    background: transparent;
+    transition: 0.4s ease;
+    text-align: 'left';
+    border-radius: 0px;
+
+}
